@@ -6,9 +6,9 @@ import sys
 
 def print_help():
     ''' Outputs how to use the script. '''
-    print('Usage: %s <encrypted/decrypted file> <decrypted/encrypted file>, or' % sys.argv[0])
-    print('       %s <encrypted/decrypted file> <--key|-k> <key>' % sys.argv[0])
-    print('       %s <encrypted/decrypted file> <--brute|-b>' % sys.argv[0])
+    print('Usage: %s <encrypted/plain text file> <plain text/encrypted file>, or' % sys.argv[0])
+    print('       %s <encrypted/plain text file> <--key|-k> <key>' % sys.argv[0])
+    print('       %s <encrypted/plain text file> <--brute|-b>' % sys.argv[0])
     sys.exit(1)
 
 def extract_key(res):
@@ -101,7 +101,7 @@ def xor_file_with_key():
     f_if.close()
 
 def xor_brute_force():
-    ''' XORs a file with all possible strings made out of n bytes. '''
+    ''' XORs a file with all possible strings made out of 2 bytes. '''
     input_file = sys.argv[1]
 
     try:
