@@ -15,6 +15,10 @@ A script with some common operations used to solve XOR challenges in CTFs.
 `python3 xorutils.py crypt.enc plain.txt`
 
 ## Brute-forcing an encrypted file with all possible keys made out of 1 and 2 bytes
+This generates a file called <encrypted/plain text file>.bf_res containing the results:
+
 `python3 xorutils.py <encrypted/plain text file> <--brute|-b>`
 ### Example
+This generates a file called crypt.enc.bf_res containing the results:
+
 `python3 xorutils.py crypt.enc --brute`
